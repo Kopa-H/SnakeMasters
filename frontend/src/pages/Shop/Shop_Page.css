@@ -1,0 +1,146 @@
+
+.shop-page {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #007bff, #1e90ff);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.skins-container {
+    position: absolute;
+    top: 0px;
+    right: 0vw;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 75%;
+    padding: 100px 0px;
+
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to right, #6a5acd, #87ceeb);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    z-index: 0;
+}
+
+.money-info {
+    top: 0;
+
+    display: flex;
+
+    width: 70%;
+    height: 20%;
+    font-size: 1.5rem;
+
+    padding: 20px;
+
+    border: 2px solid #1e90ff;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #d9ff00, #ffdd00);
+
+    margin: 25px 0px;
+
+    justify-content: center;
+}
+
+.money-label {
+    position: relative;
+
+    font-size: 2.5rem;
+    color: #5f00f9;
+    font-weight: bold;
+}
+
+.money-value {
+    position: relative;
+    margin-left: 25px;
+
+    font-size: 2.5rem;
+    color: #d206f6;
+
+    font-weight: bold;
+}
+
+.skin-item {
+    position: relative;
+    top: 0;
+
+    width: 70%;
+    height: 20%;
+
+    font-size: 10px;
+
+    padding: 20px;
+    border: 2px solid #1e90ff;
+    border-radius: 10px;
+    margin: 25px 0px;
+
+    background: linear-gradient(to bottom, #cec402, #FF8C00);
+}
+
+.skin-button {
+    position: relative;
+    top: 0;
+
+    width: 70%;
+    height: 20%;
+
+    font-size: 2rem;
+
+    padding: 20px;
+    border: 2px solid #1e90ff;
+    border-radius: 10px;
+    margin: 25px 0px;
+
+    background: linear-gradient(to right, #FF4500, #FF8C00);
+}
+
+.skin-name {
+    position: relative;
+    left: 20%;
+
+    font-size: 3.5rem;
+    color: #5f00f9;
+    font-weight: bold;
+}
+
+.skin-price {
+    position: relative;
+    left: 20%;
+
+    font-size: 1.4rem;
+    color: #d206f6;
+    font-weight: 600;
+}
+
+.purchase-confirmation {
+    position: fixed;
+    top: 20%;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 55%;
+    padding: 100px 0px;
+
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom, #b1570d, #c31a11);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    z-index: 1;
+}

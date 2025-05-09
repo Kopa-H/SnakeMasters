@@ -1,0 +1,78 @@
+@media (max-width: 700px) {
+    .game-records-label {
+        font-size: 1.7rem;
+    }
+
+    .game-records-prev-button, .game-records-next-button {
+        font-size: 1.8rem;
+    }
+
+    .top-players-container {
+        width: 90%;
+    }
+
+    .player-container {
+        width: 90%;
+    }
+
+    .player-info {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .game-records-label {
+        font-size: 1.3rem;
+    }
+
+    .top-players-container {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .player-info {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .game-records-label {
+        font-size: 1rem;
+    }
+
+    .player-info {
+        font-size: 1rem;
+    }
+
+    .player-achievement-date {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .game-records-label {
+        font-size: 0.7rem;
+    }
+
+    .player-info {
+        font-size: 0.8rem;
+    }
+
+    .player-achievement-date {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .game-records-label {
+        font-size: 0.5rem;
+    }
+
+    .player-info {
+        font-size: 0.6rem;
+    }
+
+    .player-achievement-date {
+        display: none;
+    }
+}

@@ -1,0 +1,49 @@
+.main-title {
+    position: fixed;
+
+    display: flex;
+    flex-direction: row;
+
+    top: 5%;
+    left: 5%;
+    padding: 10px 20px;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    background: linear-gradient(to bottom, #8a2be2, #4b0082);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+.main-title:hover {
+    transform: scale(1.05);
+}
+.main-title h1 {
+    margin: 0;
+    padding: 0;
+
+    font-weight: bold;
+}
+
+/* MARGENES PARA QUE NO SE CHOQUEN LAS LETRAS */
+.main-title h1:nth-of-type(2) {
+    margin-right: 3px;
+}
+.main-title h1:nth-of-type(5) {
+    margin-right: 15px;
+}
+.main-title h1:nth-of-type(7) {
+    margin-right: 4px;
+}
+.main-title h1:nth-of-type(11) {
+    margin-left: 5px;
+}
+.main-title h1:nth-of-type(12) {
+    margin-left: 2px;
+}

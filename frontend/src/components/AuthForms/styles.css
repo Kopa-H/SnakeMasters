@@ -1,0 +1,46 @@
+.data-label {
+    font-weight: bold;
+    color: #D2691E;
+    font-family: 'Your Cool Font', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+button[type="submit"] {
+    margin-top: 10px; /* Ajusta el valor según sea necesario */
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+label {
+    text-align: right;
+}
+
+input {
+    width: 100%;
+    color: aliceblue;
+    font-weight: 500;
+    background: linear-gradient(to bottom, rgb(128, 255, 0), rgb(0, 249, 245));
+    color: transparent; /* Oculta el color del texto */
+    -webkit-background-clip: text; /* Aplica el gradiente como color de texto en navegadores webkit */
+    background-clip: text; /* Aplica el gradiente como color de texto */
+}
+
+.sing-up-button, .login-button {
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
+    background: linear-gradient(to right, #FF4500, #FF8C00);
+    padding: 4px;
+
+    border: 2.5px solid black;
+}

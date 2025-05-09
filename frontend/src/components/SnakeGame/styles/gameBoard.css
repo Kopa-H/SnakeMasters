@@ -1,0 +1,46 @@
+.game-screen {
+    width: 80%;
+    height: 70%;
+
+    margin-top: 7%;
+
+    position: fixed;
+    padding: 20px;
+
+    background: linear-gradient(to bottom, rgb(138, 43, 226), rgb(75, 0, 130));
+    border: 3px dashed rgb(15, 182, 211);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.game-board-container {
+    position: relative;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board {
+    display: grid;
+}
+
+.cell {
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.snake-head, .fruit-cell {
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    font-size: 1rem;
+}

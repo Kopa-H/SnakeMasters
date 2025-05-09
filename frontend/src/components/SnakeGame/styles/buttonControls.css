@@ -1,0 +1,40 @@
+.button-controls-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    bottom: 3.5%;
+
+    align-items: center;
+
+    z-index: 1;
+}
+
+.top-button, .right-button, .left-button, .bottom-button {
+    width: 110px;
+    height: 60px;
+    font-size: 1.2em;
+
+    background: linear-gradient(90deg, #33ff33 0%, #009900 100%);
+    border: 2px solid #04bb35;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-right-buttons {
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px;
+}
+
+.left-button {
+    margin-right: 15px;
+}
+
+@media (min-width: 500px) {
+    .button-controls-container {
+        display: none;
+    }
+}

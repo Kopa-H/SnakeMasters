@@ -1,0 +1,36 @@
+@media (max-width: 700px) {
+    .fruits-info-container {
+        width: 85%;
+    }
+
+    .fruit-item {
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    .fruits-info-container {
+        width: 95%;
+    }
+
+    .fruit-item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .fruits-info-container {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .fruit-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+}
+
+@media (max-width: 300px) {
+}

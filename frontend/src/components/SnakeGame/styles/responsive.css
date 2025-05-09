@@ -1,0 +1,28 @@
+@media (max-width: 500px) {
+    .main-title-in-game {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .main-title-in-game:hover {
+        transform: translate(-50%, 0) scale(1.05);
+    }
+
+    .game-screen {
+        width: 98%;
+    }
+
+    .game-screen.controls-visible {
+        margin-top: -25%;
+        height: 55%;
+    }
+
+    .controls-option-container {
+        display: flex;
+    }
+
+    .current-score {
+        font-size: 1.5rem;
+
+        width: 60%;
+    }
+}

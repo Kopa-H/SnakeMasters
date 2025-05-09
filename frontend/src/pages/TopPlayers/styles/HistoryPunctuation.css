@@ -1,0 +1,22 @@
+.history-punctuation-value {
+    display: flex;
+
+    font-size: 2rem;
+    font-style: italic;
+
+    padding: 10px;
+
+    border: 1px solid #000;
+    border-radius: 20px;
+    background: linear-gradient(to top, #007bff, #ffda1e);
+}
+
+.history-punctuation-description {
+    display: flex;
+
+    font-size: 0.7rem;
+
+    margin-top: 5px;
+
+    text-align: center;
+}

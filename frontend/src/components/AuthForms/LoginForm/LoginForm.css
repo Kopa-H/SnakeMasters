@@ -1,0 +1,41 @@
+.login-form {
+  display: flex;
+
+  width: 350px;
+  margin: 0 auto;
+
+  justify-content: center;
+  border: 2px solid black;
+  padding: 20px;
+
+  background: linear-gradient(to bottom, rgb(14, 14, 123, 0.3), rgb(255, 69, 0, 0.7));
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+
+  z-index: 1;
+}
+
+.error-login-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid white;
+}
+
+.error-login-message, .error-login-forgotten-password {
+  width: 230px;
+  height: 40px;
+
+  font-size: 12px;
+  font-style: italic;
+
+  background: linear-gradient(to right, #FF6347, #FF4500);
+  padding: 0;
+
+  text-align: center;
+  color: white;
+}
