@@ -1,6 +1,13 @@
 import bcrypt from 'bcrypt';
 import User from '../../database/models/userModel.mjs';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
+import { sendTelegramMessage } from '../../../..//kopahub_manager/bots/senderBot.mjs';
+const telegramBotToken = process.env.TELEGRAM_BOT_TOKEN;
+const chatId = process.env.TELEGRAM_CHAT_ID;
+
 const handleRegister = async (req, res) => {
   console.log("\nSe ha recibido una petición para registrarse");
   try {
@@ -43,6 +50,12 @@ const handleRegister = async (req, res) => {
     });
 
     await newUser.save();
+
+    sendTelegramMessage(
+      `Se ha registrado un nuevo usuario con username ${newUser.username} y email ${newUser.email}`,
+      telegramBotToken,
+      chatId
+    );
 
     console.log('Nuevo usuario insertado:', newUser);
     res.status(201).json(newUser);

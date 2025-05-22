@@ -1,5 +1,12 @@
 import User from '../../database/models/userModel.mjs';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
+import { sendTelegramMessage } from '../../../..//kopahub_manager/bots/senderBot.mjs';
+const telegramBotToken = process.env.TELEGRAM_BOT_TOKEN;
+const chatId = process.env.TELEGRAM_CHAT_ID;
+
 // Ruta para eliminar un usuario existente
 const deleteUser = async (req, res) => {
   console.log("\nSe ha recibido una petición para eliminar un usuario por refreshToken");
@@ -21,6 +28,12 @@ const deleteUser = async (req, res) => {
 
     // Eliminar el usuario de la base de datos
     const deletedUser = await User.findByIdAndDelete(foundUser._id);
+
+    sendTelegramMessage(
+      `Se ha eliminado un usuario con username ${deletedUser.username} y email ${deletedUser.email}`,
+      telegramBotToken,
+      chatId
+    );
 
     res.status(204).json(deletedUser);
   } catch (error) {

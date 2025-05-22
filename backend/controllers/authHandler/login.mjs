@@ -1,10 +1,13 @@
-// Luego ya lo importamos en un archivo independiente:
-// import { generateToken } from './middleware.mjs'; // Importa la función para generar tokens
+
 import User from '../../database/models/userModel.mjs'; // Importa el modelo de usuario
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import dotenv from 'dotenv';
 dotenv.config();
+
+import { sendTelegramMessage } from '../../../..//kopahub_manager/bots/senderBot.mjs';
+const telegramBotToken = process.env.TELEGRAM_BOT_TOKEN;
+const chatId = process.env.TELEGRAM_CHAT_ID;
 
 const handleLogin = async (req, res) => {
   console.log("\nSe ha recibido una petición para hacer login");
@@ -50,6 +53,12 @@ const handleLogin = async (req, res) => {
     // Guarda el REFRESH token en el usuario de la base de datos
     foundUser.refreshToken = refreshToken; // Asigna el refreshToken al usuario
     await foundUser.save(); // Guarda el usuario actualizado en la base de datos
+
+    sendTelegramMessage(
+      `El usuario ${foundUser.username} ha iniciado sesión en su cuenta`,
+      telegramBotToken,
+      chatId
+    );
 
     // Configuración de la cookie
     const cookieOptions = {

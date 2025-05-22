@@ -41,7 +41,6 @@ function convertGrid(grid: string[]): Cell[][] {
 
 
 const CHALLENGES: ChallengeInfo[] = [
-  
   {
     id: 1,
     name: "Little Room",
